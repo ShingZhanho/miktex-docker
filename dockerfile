@@ -8,7 +8,7 @@ ARG miktex_work=~/work
 COPY ./apt-packages.txt .
 
 RUN     apt-get update \
-    &&  apt-get install -y --no-install-recommends $(cat apt-packages.txt)
+    &&  apt-get install -y --no-install-recommends $(cat apt-packages.txt) \
     &&  rm apt-packages.txt
 
 RUN curl -fsSL https://miktex.org/download/key | tee /usr/share/keyrings/miktex-keyring.asc > /dev/null \
