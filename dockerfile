@@ -3,7 +3,7 @@ FROM ubuntu:jammy
 ARG DEBIAN_FRONTEND=noninteractive
 
 ARG miktex_home=/var/lib/miktex
-ARG miktex_work=~/work
+ARG miktex_work=/root/work
 
 COPY ./apt-packages.txt .
 
