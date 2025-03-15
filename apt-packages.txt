@@ -1,0 +1,10 @@
+apt-transport-https
+ca-certificates
+dirmngr
+ghostscript
+gnupg
+gosu
+make
+perl
+python3
+python3-pygments
